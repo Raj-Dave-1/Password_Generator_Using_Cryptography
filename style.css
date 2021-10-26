@@ -1,0 +1,240 @@
+/* 🚩 Dada Ki Jay Ho 🚩 */
+.dada-ki-jay-ho {
+  color: #fff;
+  font-size: 4px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #040d21;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+  background-image:
+    linear-gradient(45deg, rgba(0, 3, 92, .1) 90%, rgba(0, 162, 255, .4)),
+    linear-gradient(310deg, rgba(0, 3, 92, 0) 88%, rgba(56, 63, 255, .4)),
+    linear-gradient(145deg, rgba(0, 3, 92, 0.1) 85%, rgba(240, 0, 132, 0.45));
+}
+
+.outer-box {
+  width: 40vw;
+  height: 68vh;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+
+.main-box {
+  width: 40vw;
+  height: 38vh;
+  /* background-color: #fff; */
+  background-color: rgba(142, 5, 194, 0.2);
+  border-radius: 26px;
+  padding-top: 50px;
+  animation-name: moveBox;
+  animation-duration: 1s;
+}
+
+@keyframes moveBox {
+  0% {
+    transform: translateX(-100px);
+    opacity: .4;
+  }
+
+  60% {
+    transform: translate(40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.plaintext-label {
+  position: relative;
+  left: 30px;
+  font-size: 30px;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 10px;
+  animation-name: moveLabel;
+  animation-duration: 2s;
+}
+
+#plaintext {
+  position: relative;
+  padding-left: 20px;
+  left: 68px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #E23E57;
+  border-style: none;
+  border-bottom-style: solid;
+  outline: none;
+  width: 80%;
+  height: 50px;
+  font-size: 30px;
+  margin-bottom: 36px;
+  letter-spacing: 2px;
+  animation-name: moveInputFields;
+  animation-duration: 2s;
+}
+
+.key-label {
+  position: relative;
+  left: 30px;
+  font-size: 30px;
+  font-weight: 900;
+  color: #fff;
+  animation-name: moveLabel;
+  animation-duration: 2s;
+}
+
+@keyframes moveLabel {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    transform: translateX(30px);
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#key {
+  position: relative;
+  padding-left: 20px;
+  left: 68px;
+  bottom: 5px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #E23E57;
+  border-style: none;
+  border-bottom-style: solid;
+  outline: none;
+  width: 80%;
+  height: 50px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  animation-name: moveInputFields;
+  animation-duration: 2s;
+}
+
+@keyframes moveInputFields {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.2;
+    transform: translateX(50px);
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.pngImg {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  animation-name: pngImg;
+  animation-duration: 3s;
+}
+
+@keyframes pngImg {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#get-btn {
+  border-radius: 12px;
+  padding: 15px 70px;
+  margin-top: 15px;
+  background-color: blue;
+  border: none;
+  transition: all .5s;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 2px;
+  transform: translateX(435px);
+  animation-name: moveButton;
+  animation-duration: 2s;
+}
+
+#get-btn:hover {
+  background-color: green;
+  transform: translate(435px, -3px);
+}
+
+#get-btn:active {
+  background-color: green;
+  transform: translateY(-1px);
+  transform: translate(435px, -1px);
+}
+
+@keyframes moveButton {
+  0% {
+    opacity: 0;
+    transform: translateX(235px);
+  }
+
+  30% {
+    transform: translateX(465px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(435px);
+  }
+}
+
+.pass-box {
+  position: relative;
+  top: 20px;
+  left: 100px;
+  height: 68px;
+  width: 40vw;
+  border-radius: 10px;
+  background-color: rgba(190, 159, 225, .3);
+  animation-name: passFade;
+  animation-duration: 1s;
+}
+
+@keyframes passFade {
+  0% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#password {
+  line-height: 1.8;
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+  letter-spacing: 2px;
+}
