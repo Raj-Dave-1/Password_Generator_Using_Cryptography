@@ -1,7 +1,3 @@
-// 🚩 Dada Ki Jay Ho 🚩
-
-
-
 var btn = document.getElementById("get-btn");
 var plaintext_field = document.getElementById("plaintext");
 var key_field = document.getElementById("key");
